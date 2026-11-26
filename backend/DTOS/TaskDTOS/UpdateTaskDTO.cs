@@ -20,7 +20,7 @@ namespace WebApplication1.DTOS.TaskDTOS
         [EnumDataType(typeof(TaskPriority), ErrorMessage = "Priority must be a Low, Medium or High value.")]
         public TaskPriority Priority { get; set; }
         [Required]
-        public bool IsCompleted { get; set; }
+        public bool? IsCompleted { get; set; }
 
     }
 }
