@@ -1,12 +1,11 @@
-// using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 
-// namespace WebApplication1.Models
-// {
-//     public class ApplicationUser : IdentityUser
-//     {
+namespace WebApplication1.Models
+{
+    public class ApplicationUser : IdentityUser
+    {
 
 
-//         public string UserName { get; set; } = String.Empty;
-//       public ICollection<TaskItem> Tasks { get; set; } = new List<TaskItem>();
-//     }
-// }
+            public ICollection<TaskItem> TasksItems { get; set; } = new List<TaskItem>();
+    }
+}
